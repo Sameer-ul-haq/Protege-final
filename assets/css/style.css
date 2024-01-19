@@ -6,20 +6,40 @@ body {
     background-position: bottom; */
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+  }
+    body::-webkit-scrollbar-track {
+    background: #000; 
+  }
+    body::-webkit-scrollbar-thumb {
+    background: #99F400; 
+      border-radius:0px;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    
+    background: #555; 
+  } 
+
   @font-face {
     font-family: "general-sans";
     src: url("../fonts/GeneralSans-Regular.woff2")
+  }
+  @font-face {
+    font-family: "general-semibold-sans";
+    src: url("../fonts/GeneralSans-Semibold.woff2")
   }
 
   .logo img {
     width: 16%;
 }
 
+
 a.btn.btn-primary {
-    border-radius: 100px;
+    border-radius: 32px;
     color: #000;
     background: #99F400;
-    font-family: "general-sans";
+    font-family: "general-semibold-sans";
     font-weight: 900;
     font-size: 12px;
     padding: 11px 17px;
@@ -63,7 +83,7 @@ ul.foot-terms li a.btn.btn-secondary {
     color: #0B0B0B;
     font-family: 'general-sans';
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 ul.foot-terms li {
@@ -71,10 +91,10 @@ ul.foot-terms li {
 }
 
 footer {
-    background: url(../images/footer-mask.png);
+    background: url(../images/footer-mask.svg);
     position: absolute;
     width: 100%;
-    bottom: -82px;
+    bottom: -37px;
     height: 35vh;
     display: flex;
     align-items: end;
@@ -86,4 +106,8 @@ ul.foot-terms {
     gap: 29px;
     padding: 0;
     margin: 0;
+}
+
+section.document-review img {
+    width: 70%;
 }
