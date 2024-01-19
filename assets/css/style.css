@@ -1,0 +1,89 @@
+body {
+    background-color: #0B0B0B;
+    position: relative;
+    /* background-image: url(../images/footer-mask.jpg);
+    background-size: cover;
+    background-position: bottom; */
+}
+
+  @font-face {
+    font-family: "general-sans";
+    src: url("../fonts/GeneralSans-Regular.woff2")
+  }
+
+  .logo img {
+    width: 16%;
+}
+
+a.btn.btn-primary {
+    border-radius: 100px;
+    color: #000;
+    background: #99F400;
+    font-family: "general-sans";
+    font-weight: 900;
+    font-size: 12px;
+    padding: 11px 17px;
+    border: 0;
+}
+
+section.main-content h2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+section.main-content p{
+    font-size: 16px;
+    color: #9D9D9D;
+    font-family: "general-sans";
+    padding: 20px 0;
+}
+section.main-content h2 span {
+    background-image: url(../images/text-back.svg);
+    color: #99F400;
+    background-size: cover;
+    padding: 15px 5px;
+}
+section.main-content a.btn.btn-primary {
+    font-size: 16px;
+    padding: 15px 29px;
+}
+
+footer p.copyright {
+    font-size: 14px;
+    margin: 0 !important;
+    color: #858585;
+    font-family: 'general-sans';
+    font-weight: 500;
+}
+
+ul.foot-terms li a.btn.btn-secondary {
+    background: transparent;
+    border: 0;
+    color: #0B0B0B;
+    font-family: 'general-sans';
+    font-weight: 600;
+    font-size: 15px;
+}
+
+ul.foot-terms li {
+    list-style: none;
+}
+
+footer {
+    background: url(../images/footer-mask.png);
+    position: absolute;
+    width: 100%;
+    bottom: -82px;
+    height: 35vh;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+}
+ul.foot-terms {
+    display: flex;
+    justify-content: flex-end;
+    gap: 29px;
+    padding: 0;
+    margin: 0;
+}
