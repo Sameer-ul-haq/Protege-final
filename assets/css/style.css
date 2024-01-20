@@ -31,7 +31,7 @@ body::-webkit-scrollbar {
   }
 
   .logo img {
-    width: 16%;
+    width: 18%;
 }
 
 
@@ -99,6 +99,7 @@ footer {
     display: flex;
     align-items: end;
     background-size: cover;
+    background-position: top center;
 }
 ul.foot-terms {
     display: flex;
@@ -110,4 +111,57 @@ ul.foot-terms {
 
 section.document-review img {
     width: 70%;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo img {
+        width: 65%;
+    }
+    
+    a.btn.btn-primary {
+        font-size: 9px;
+        padding: 9px 12px;
+    }
+    
+    section.main-content h2 {
+        font-size: 20px;
+    }
+    
+    section.main-content p {
+        font-size: 11px;
+    }
+    
+    section.main-content a.btn.btn-primary {
+        font-size: 12px;
+        padding: 10px 24px;
+    }
+    footer p.copyright {
+        font-size: 10px;
+    }
+    
+    ul.foot-terms {
+        flex-direction: column;
+        gap: 0;
+        align-items: end;
+    }
+    
+    ul.foot-terms li a.btn.btn-secondary {
+        font-size: 10px;
+    }
+    
+    footer {
+        bottom: -88px;
+    }
+    
+    ul.foot-terms li {
+        line-height: 1px;
+    }
+  }
+
+  @media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    .logo img {
+        width: 30%;
+    }
 }
